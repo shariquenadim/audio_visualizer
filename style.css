@@ -4,11 +4,6 @@
     box-sizing: border-box;
 }
 
-.h1 {
-    color: aqua;
-    weight: 600px !important;
-}
-
 #container {
     position: absolute;
     top: 0;

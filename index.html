@@ -7,9 +7,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ramps || Audio Visualizer</title>
     <link rel="stylesheet" href="style.css">
+    <script src="textanim.js"></script>
 </head>
 
 <body>
+    <div id="container1">
+        <span id="text1"></span>
+        <span id="text2"></span>
+    </div>
+
+    <svg id="filters">
+        <defs>
+            <filter id="threshold">
+                <feColorMatrix in="SourceGraphic" type="matrix" values="1 0 0 0 0
+                                        0 1 0 0 0
+                                        0 0 1 0 0
+                                        0 0 0 255 -140" />
+            </filter>
+        </defs>
+    </svg>
     <div id="container">
         <canvas id="canvas1"></canvas>
         <audio id="audio1" controls></audio>
